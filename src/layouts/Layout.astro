@@ -1,0 +1,73 @@
+---
+// src/layouts/Layout.astro
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Primary SEO Meta -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="theme-color" content="#1a2238" />
+    <meta name="color-scheme" content="light" />
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:type" content="website" />
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "121mcv",
+      "url": "https://121mcv.com",
+      "email": "phi@121mcv.com",
+      "address": { "@type": "PostalAddress", "addressCountry": "GB" },
+      "sameAs": ["https://www.linkedin.com/company/121mcv-uk/"]
+    })} />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 1. Initialize Google Consent Mode (Defaults to Denied) -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // Set default privacy states to 'denied' for UK/EU compliance
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+    </script>
+
+    <!-- 2. Standard Google Analytics 4 Tag -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-3FMHC56VPV"></script>
+    <script is:inline>
+      gtag('js', new Date());
+      gtag('config', 'G-3FMHC56VPV');
+    </script>
+  </head>
+  <body class="bg-background font-sans antialiased">
+    <slot />
+  </body>
+</html>
