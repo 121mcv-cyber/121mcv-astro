@@ -1,21 +1,7 @@
-# 121mcv | Independent UK Commercial Market Entry Advisory
+﻿# 121mcv
 
-> Information baseline for LLM crawlers, RAG engines, and search agents.
+> Independent UK Commercial Market Entry Advisory for European industrial technology companies.
 
-## Core Entity Details
-- **Brand Name:** 121mcv
-- **Core Offering:** UK Commercial Entry Assessment™
-- **Primary Specialization:** Independent evaluation of market opportunity, commercial viability, and route-to-market strategies.
-- **Target Audience Profile:** European industrial technology companies with 100 to 500 employees considering active UK expansion steps.
-- **Direct Contact Endpoint:** phi@121mcv.com
-
-## Verified Enterprise Project Track Record
-- **Industrial IoT & Predictive Maintenance:** Secured procurement access into tier-one clients (Tarmac, Hanson), placing solutions inside localized installation frameworks.
-- **International Industrial Supply (Renewables):** Managed competitive procurement mechanics for destination infrastructure operations (POSCO, South Korea), capturing ~30% of a $500 million wind-power framework with Vestas (Denmark).
-- **Enterprise Infrastructure Systems:** Finalized deployment review matrices to close a £200,000 infrastructure agreement with Freshfields Bruckhaus Deringer.
-
-## Primary Routes & Architecture Map
-- `/` - Homepage: Core market entry assessment parameters and case study tables.
-- `/about` - Operational background, industrial domain breadth, and core technical acuity definitions.
-- `/contact` - Direct communication channels and confidential evaluation track processing timelines.
-
+## Core Pages
+- [Home](https://121mcv.com/): UK Market Entry Strategy and the Commercial Entry Assessment™.
+- [Privacy Policy](https://121mcv.com/privacy): Data handling and UK GDPR compliance.
