@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// FAQ Schema for AI Overviews and Answer Engines
+const faqs = [
+  {
+    question: "Why do European tech companies fail in the UK?",
+    answer: "European tech companies fail in the UK primarily because they treat it as a homogeneous extension of their home market. They often misjudge local procurement structures, over-invest in full UK subsidiaries prematurely, and fail to validate their route-to-market before building an expensive local sales team."
+  },
+  {
+    question: "Do I need a UK subsidiary to sell in the UK?",
+    answer: "No. Many European companies successfully enter the UK using a fractional partner or distributor model before committing to the overhead of a full UK Limited Company."
+  }
+];
+---
+
+<Layout 
+  title="Why UK Subsidiaries Fail: 5 Commercial Mistakes | 121mcv"
+  description="Functional products and strong home-market traction don't guarantee UK success. Here is how to avoid the most common commercial pitfalls."
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Why UK Subsidiaries Fail: 5 Commercial Mistakes European Tech Companies Make",
+    "description": "Functional products and strong home-market traction don't guarantee UK success. Here is how to avoid the most common commercial pitfalls.",
+    "datePublished": "2026-11-18",
+    "author": {
+      "@type": "Organization",
+      "name": "121mcv"
+    }
+  })} />
+  
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  })} />
+
+  <div class="flex min-h-screen flex-col bg-background">
+    <header class="border-b border-border py-4">
+      <div class="mx-auto max-w-4xl px-6 lg:px-8">
+        <a href="/resources" class="text-sm font-semibold text-accent hover:text-primary transition-colors">&larr; Back to Resources</a>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <article class="mx-auto max-w-3xl px-6 py-16 lg:px-8 lg:py-24">
+        <header class="mb-12 text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Article</p>
+          <h1 class="font-serif text-3xl font-semibold leading-tight text-primary md:text-5xl mb-6">Why UK Subsidiaries Fail: 5 Commercial Mistakes European Tech Companies Make</h1>
+          <p class="text-sm text-muted-foreground">November 2026</p>
+        </header>
+
+        <div class="prose prose-lg prose-slate mx-auto text-foreground/85">
+          <p class="lead text-xl text-foreground/80 mb-8">European industrial technology companies often enter the UK market with excellent products and strong domestic traction, only to find the UK a much harder commercial environment to navigate. Here are the five most common pitfalls for established firms (100–500 employees) expanding into the UK.</p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">Why do European industrial tech companies fail when entering the UK?</h2>
+          <p class="mb-6">European tech companies fail in the UK primarily because they treat it as a homogeneous extension of their home market. They often misjudge local procurement structures, over-invest in full UK subsidiaries prematurely, and fail to validate their route-to-market before building an expensive local sales team.</p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">Mistake 1: Treating the UK as just another European territory</h2>
+          <p class="mb-6">The UK is not simply "Germany with different tax laws." It has a distinct business culture, procurement process, and competitive landscape.</p>
+          <p class="mb-6">Assuming your DACH strategy will work in London without localization is a recipe for slow failure. <em>[INSERT FIRST-HAND EXAMPLE OR DATA]</em></p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">Mistake 2: Appointing a UK distributor without validation</h2>
+          <p class="mb-6">Many companies sign with the first UK distributor that shows interest, hoping they will magically generate pipeline.</p>
+          <p class="mb-6">This rarely works. Distributors are motivated by margin, not by building your brand. If they do not have the technical capability to sell your specific solution, your product will sit on a shelf. Always validate a distributor's existing client base and technical acumen before signing an exclusive agreement.</p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">Mistake 3: Misunderstanding UK procurement cycles</h2>
+          <p class="mb-6">UK enterprise buyers (especially in industrial, infrastructure, and manufacturing sectors) rely heavily on rigid framework agreements and approved vendor lists.</p>
+          <p class="mb-6">If your product is not on a framework (like those managed by the Crown Commercial Service), you will struggle to sell to tier-one clients. You must map out the procurement path <em>before</em> you start marketing.</p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">Mistake 4: Over-hiring before validating demand</h2>
+          <p class="mb-6">Setting up a UK Limited Company and hiring a full UK sales team is an expensive commitment.</p>
+          <p class="mb-6">If you hire two sales reps with significant base salaries plus overheads, you are burning capital before you have proven your product-market fit. <em>[INSERT FIRST-HAND EXAMPLE OR DATA]</em></p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">Mistake 5: Misunderstanding the current UKCA and CE marking rules</h2>
+          <p class="mb-6">Post-Brexit, the regulatory environment has evolved. However, in 2024, the UK government legislated to indefinitely recognise the CE mark across 21 product regulations in Great Britain.</p>
+          <p class="mb-6">While sectors like medical devices and construction products have distinct rules, most industrial technology firms can still rely on the CE mark for GB market access. <em>[VERIFY STATUS: Check specific product sector before assuming CE acceptance. Ensure you understand the separate rules for Northern Ireland under the Windsor Framework.]</em></p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">How does the UK Commercial Entry Assessment™ solve this?</h2>
+          <p class="mb-6">The <a href="/#assessment" class="text-accent underline hover:text-primary transition-colors">UK Commercial Entry Assessment™</a> provides an objective, independent evaluation of your specific technology and target market before you commit capital.</p>
+          <p class="mb-6">It maps out the specific UK industries representing the strongest operational opportunity, isolates the appropriate target customers, and determines the lowest-risk entry architecture.</p>
+        </div>
+
+        <div class="mt-16 rounded-sm bg-primary p-8 text-primary-foreground md:p-12 text-center">
+          <h3 class="font-serif text-2xl font-semibold mb-4">Ready to validate your UK opportunity?</h3>
+          <p class="mb-6 text-primary-foreground/80">Don't rely on guesswork. The UK Commercial Entry Assessment™ provides an objective framework before you invest.</p>
+          <a href="https://calendly.com/121mcv" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-sm border border-accent bg-accent px-6 py-3 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Request a discussion</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="border-t border-border bg-background py-10">
+      <div class="mx-auto max-w-4xl px-6 text-center text-sm text-muted-foreground">
+        © 2026 121mcv. All rights reserved.
+      </div>
+    </footer>
+  </div>
+</Layout>
