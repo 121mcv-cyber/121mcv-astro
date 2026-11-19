@@ -1,7 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-// Later, we will replace this static array with an Astro Content Collection
 const articles = [
   {
     title: "Why UK Subsidiaries Fail: 5 Commercial Mistakes European Tech Companies Make",
@@ -25,7 +24,7 @@ const articles = [
   description="Strategic guides and insights for European industrial technology companies evaluating UK expansion."
 >
   <div class="flex min-h-screen flex-col">
-    <!-- Header (Reuse your existing header) -->
+    <!-- Header -->
     <header class="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
       <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
         <a href="/" class="flex flex-col leading-none">
@@ -80,7 +79,7 @@ const articles = [
       </section>
     </main>
 
-    <!-- Footer (Reuse your existing footer) -->
+    <!-- Footer -->
     <footer class="border-t border-border bg-background py-10">
       <div class="mx-auto max-w-6xl px-6 lg:px-8 text-center text-sm text-muted-foreground">
         © 2026 121mcv. All rights reserved.

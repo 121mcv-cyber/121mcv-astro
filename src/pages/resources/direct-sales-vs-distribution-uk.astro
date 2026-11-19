@@ -1,0 +1,129 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// FAQ Schema for AI Overviews and Answer Engines
+const faqs = [
+  {
+    question: "Is direct sales or distribution better for entering the UK market?",
+    answer: "Direct sales provides higher margins and full control over your brand, but requires significant upfront capital and time. Distribution offers immediate market access and lower overheads, but risks losing control of your commercial pipeline and brand positioning."
+  },
+  {
+    question: "How do I choose a UK distributor for my industrial tech?",
+    answer: "Choose a UK distributor based on their existing technical capability, their current client base, and their ability to service the product post-sale. Avoid signing exclusive agreements until they have proven they can generate qualified pipeline."
+  }
+];
+---
+
+<Layout 
+  title="Direct Sales vs. Distribution: Choosing the Right UK Route-to-Market | 121mcv"
+  description="An objective comparison of entry architectures for European industrial technology companies entering the UK market."
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Direct Sales vs. Distribution: Choosing the Right UK Route-to-Market",
+    "description": "An objective comparison of entry architectures for European industrial technology companies entering the UK market.",
+    "datePublished": "2026-11-18",
+    "author": {
+      "@type": "Organization",
+      "name": "121mcv"
+    }
+  })} />
+  
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  })} />
+
+  <div class="flex min-h-screen flex-col bg-background">
+    <header class="border-b border-border py-4">
+      <div class="mx-auto max-w-4xl px-6 lg:px-8">
+        <a href="/resources" class="text-sm font-semibold text-accent hover:text-primary transition-colors">&larr; Back to Resources</a>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <article class="mx-auto max-w-3xl px-6 py-16 lg:px-8 lg:py-24">
+        <header class="mb-12 text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Article</p>
+          <h1 class="font-serif text-3xl font-semibold leading-tight text-primary md:text-5xl mb-6">Direct Sales vs. Distribution: Choosing the Right UK Route-to-Market</h1>
+          <p class="text-sm text-muted-foreground">November 2026</p>
+        </header>
+
+        <div class="prose prose-lg prose-slate mx-auto text-foreground/85">
+          <p class="lead text-xl text-foreground/80 mb-8">When expanding into the UK, choosing the right entry architecture is the most critical commercial decision. For established European industrial technology companies, the choice usually comes down to two models: direct sales or distribution.</p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">Is direct sales or distribution better for entering the UK market?</h2>
+          <p class="mb-6">Direct sales provides higher margins and full control over your brand, but requires significant upfront capital and time to build a local team. Distribution offers immediate market access and lower overheads, but risks losing control of your commercial pipeline, customer relationships, and brand positioning.</p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">Option 1: The Direct Sales Model</h2>
+          <p class="mb-6">In a direct sales model, you establish a UK entity (or use a fractional partner) and hire your own sales team. This is a high-commitment, high-reward strategy.</p>
+          
+          <h3 class="text-xl font-serif font-semibold text-primary mt-8 mb-3">Pros of Direct Sales</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Full Margin Control:</strong> You retain 100% of the revenue.</li>
+            <li><strong>Direct Feedback Loop:</strong> You hear directly from UK customers, allowing for faster product localization.</li>
+            <li><strong>Brand Equity:</strong> You build a direct relationship with tier-one UK clients.</li>
+          </ul>
+
+          <h3 class="text-xl font-serif font-semibold text-primary mt-8 mb-3">Cons of Direct Sales</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>High Burn Rate:</strong> Hiring a UK sales director and engineers can cost £200k+ per year before generating a single lead.</li>
+            <li><strong>Long Ramp-Up Time:</strong> It typically takes 6–12 months for a new UK team to understand the market and generate pipeline.</li>
+          </ul>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">Option 2: The Distribution Model</h2>
+          <p class="mb-6">In a distribution model, you partner with an existing UK company that already sells into your target market. They buy your product at a wholesale price and resell it.</p>
+
+          <h3 class="text-xl font-serif font-semibold text-primary mt-8 mb-3">Pros of Distribution</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Immediate Market Access:</strong> You leverage the distributor's existing sales team and client relationships.</li>
+            <li><strong>Lower Overhead:</strong> The distributor handles local logistics, support, and sales.</li>
+          </ul>
+
+          <h3 class="text-xl font-serif font-semibold text-primary mt-8 mb-3">Cons of Distribution</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Margin Erosion:</strong> You must share a significant portion of your revenue with the distributor.</li>
+            <li><strong>Lack of Control:</strong> Distributors are driven by margin and volume. If your product requires a complex consultative or engineering-led sale, their general sales reps will often default to pushing simpler, higher-turnover catalogue items instead.</li>
+          </ul>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">What is the best hybrid route-to-market for European tech?</h2>
+          <p class="mb-6">For companies with 100 to 500 employees, a phased or hybrid approach often mitigates the most risk. You might use a distributor for regional coverage while employing a small direct team to manage strategic tier-one accounts.</p>
+          <p class="mb-6">Alternatively, you can use a fractional commercial partner to validate demand before committing to either model. If your product requires navigating complex procurement frameworks—similar to the tier-one procurement placements secured for <strong>Tarmac</strong> and <strong>Hanson</strong>—you need technical, localized commercial representation rather than a passive reseller.</p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">How does the UK Commercial Entry Assessment™ help?</h2>
+          <p class="mb-6">Choosing the wrong model can waste 12–18 months of market momentum. The <a href="/#assessment" class="text-accent underline hover:text-primary transition-colors">UK Commercial Entry Assessment™</a> provides an independent evaluation of your specific technology. It isolates exactly which route-to-market is the lowest risk for your product, helping you avoid premature investment.</p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">How should European firms vet UK supply chain and distribution partners?</h2>
+          <p class="mb-6">Validating commercial partners requires looking beyond their sales pitch to test how they handle technical compliance and complex buyer specifications. In a major international industrial supply engagement, I acted as the technical liaison for <strong>POSCO</strong> manufacturing output from South Korea. By managing end-to-end RFI requirements and competitive procurement mechanics, we secured formal placement inside a $500 million steel supply framework—capturing approximately 30% of the allocated European wind-power manufacturing requirement with <strong>Vestas</strong> (Denmark).</p>
+          <p class="mb-6">Applying that same level of operational scrutiny when vetting UK distributors prevents you from signing exclusive agreements with partners who lack the engineering depth to close enterprise deals.</p>
+
+          <h2 class="text-2xl font-serif font-semibold text-primary mt-12 mb-4">What operational and commercial infrastructure is required for a UK subsidiary?</h2>
+          <p class="mb-6">If you commit to a direct sales model, enterprise UK buyers will scrutinize your local operational readiness, service-level agreements, and underlying infrastructure before signing off on capital expenditure. For example, when managing a major enterprise migration for global law firm <strong>Freshfields Bruckhaus Deringer</strong>, we negotiated and finalized corporate contract terms for a £200,000 multi-site network infrastructure agreement.</p>
+          <p class="mb-6">Whether you are deploying industrial hardware or enterprise systems, ensuring your local contractual frameworks, compliance standards, and post-sale engineering support match UK corporate expectations is essential before launch.</p>
+        </div>
+
+        <div class="mt-16 rounded-sm bg-primary p-8 text-primary-foreground md:p-12 text-center">
+          <h3 class="font-serif text-2xl font-semibold mb-4">Ready to validate your UK opportunity?</h3>
+          <p class="mb-6 text-primary-foreground/80">Don't rely on guesswork. The UK Commercial Entry Assessment™ provides an objective framework before you invest.</p>
+                    <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-sm border border-accent bg-accent px-6 py-3 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Request a discussion</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="border-t border-border bg-background py-10">
+      <div class="mx-auto max-w-4xl px-6 text-center text-sm text-muted-foreground">
+        © 2026 121mcv. All rights reserved.
+      </div>
+    </footer>
+  </div>
+</Layout>
+
