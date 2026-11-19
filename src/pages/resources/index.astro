@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Later, we will replace this static array with an Astro Content Collection
+const articles = [
+  {
+    title: "Why UK Subsidiaries Fail: 5 Commercial Mistakes European Tech Companies Make",
+    description: "Functional products and strong home-market traction don't guarantee UK success. Here is how to avoid the most common commercial pitfalls.",
+    slug: "uk-subsidiary-failure-mistakes",
+    date: "November 2026",
+    readTime: "5 min read"
+  },
+  {
+    title: "Direct Sales vs. Distribution: Choosing the Right UK Route-to-Market",
+    description: "An objective comparison of entry architectures for industrial technology companies entering the UK.",
+    slug: "direct-sales-vs-distribution-uk",
+    date: "November 2026",
+    readTime: "7 min read"
+  }
+];
+---
+
+<Layout 
+  title="UK Market Entry Resources | 121mcv"
+  description="Strategic guides and insights for European industrial technology companies evaluating UK expansion."
+>
+  <div class="flex min-h-screen flex-col">
+    <!-- Header (Reuse your existing header) -->
+    <header class="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
+        <a href="/" class="flex flex-col leading-none">
+          <span class="font-serif text-xl font-semibold tracking-tight text-primary">121mcv</span>
+          <span class="mt-0.5 text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-muted-foreground">UK Commercial Entry Assessment™</span>
+        </a>
+        <ul class="hidden items-center gap-8 md:flex">
+          <li><a href="/#assessment" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">Assessment</a></li>
+          <li><a href="/#experience" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">Experience</a></li>
+          <li><a href="/resources" class="text-sm font-medium text-primary transition-colors">Resources</a></li>
+        </ul>
+        <a href="https://calendly.com/121mcv" target="_blank" rel="noopener noreferrer" class="hidden rounded-sm border border-primary/20 bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 sm:inline-block">Request a discussion</a>
+      </nav>
+    </header>
+
+    <main class="flex-1 bg-background">
+      <!-- Hero -->
+      <section class="border-b border-border bg-secondary/30 py-20 lg:py-28">
+        <div class="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent">Insights & Strategy</p>
+          <h1 class="text-balance font-serif text-4xl font-semibold leading-tight tracking-tight text-primary md:text-5xl">
+            UK Market Entry Resources
+          </h1>
+          <p class="mt-6 mx-auto max-w-2xl text-lg leading-relaxed text-foreground/80">
+            Objective, data-driven guides to help European industrial technology companies validate, structure, and execute successful UK expansion.
+          </p>
+        </div>
+      </section>
+
+      <!-- Article Grid -->
+      <section class="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+        <div class="grid gap-8 md:grid-cols-2">
+          {articles.map((article) => (
+            <a href={`/resources/${article.slug}`} class="group flex flex-col rounded-sm border border-border bg-card p-8 transition-all hover:border-accent hover:shadow-md">
+              <div class="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-4">
+                <span>{article.date}</span>
+                <span>•</span>
+                <span>{article.readTime}</span>
+              </div>
+              <h2 class="font-serif text-2xl font-semibold text-primary group-hover:text-accent transition-colors mb-3">
+                {article.title}
+              </h2>
+              <p class="text-foreground/75 leading-relaxed flex-1">
+                {article.description}
+              </p>
+              <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                Read article <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (Reuse your existing footer) -->
+    <footer class="border-t border-border bg-background py-10">
+      <div class="mx-auto max-w-6xl px-6 lg:px-8 text-center text-sm text-muted-foreground">
+        © 2026 121mcv. All rights reserved.
+      </div>
+    </footer>
+  </div>
+</Layout>
